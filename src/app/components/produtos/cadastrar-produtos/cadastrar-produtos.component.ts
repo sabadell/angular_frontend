@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastrar-produtos.component.css']
 })
 export class CadastrarProdutosComponent implements OnInit {
+  nome: string='';
+  validade: string='';
+  preco: number=0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  salvarProduto(): void{
+    console.log('nome do produto',this.nome);
   }
 
 }
